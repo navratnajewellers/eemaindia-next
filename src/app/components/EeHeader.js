@@ -43,7 +43,7 @@ export default function EeHeader() {
             <AnimatedText text="Carrers" />
           </a>
         </section>
-        <section className="menu-icon-container">
+        <section className="menu-icon-container cursor-pointer ">
           <MenuIcon
             style={{ fontSize: '2em' }}
             onClick={() => setIsOpen(!isOpen)}
