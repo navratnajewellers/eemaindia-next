@@ -6,6 +6,7 @@ import MenuIcon from '@rsuite/icons/Menu';
 import { Drawer } from 'rsuite';
 import { useState } from 'react';
 import '../styles/header.css';
+import AnimatedText from './AnimatedText';
 
 export default function EeHeader() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,15 +23,25 @@ export default function EeHeader() {
           <img src="/images/company-logo.svg" alt="company-logo"></img>
         </section>
         <section className="custom-flex h-nav-container">
-          <a href="/aboutus">About Us</a>
+          <a href="/aboutus">
+            <AnimatedText text="About Us" />
+          </a>
 
-          <a href="/members">Members</a>
+          <a href="/members">
+            <AnimatedText text="Members" />
+          </a>
 
-          <a href="/eemagine">EEMagine 2024</a>
+          <a href="/eemagine">
+            <AnimatedText text="EEMagine 2024" />
+          </a>
 
-          <a href="/eemaxglobal">EEMax Global</a>
+          <a href="/eemaxglobal">
+            <AnimatedText text="EEMax Global" />
+          </a>
 
-          <a href="/carrer">Carrers</a>
+          <a href="/carrer">
+            <AnimatedText text="Carrers" />
+          </a>
         </section>
         <section className="menu-icon-container">
           <MenuIcon
