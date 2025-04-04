@@ -1,0 +1,128 @@
+.m-header-drawer-container {
+  border: solid 1px red;
+  width: 100dvw !important;
+}
+
+.m-header-drawer-container .rs-drawer-body {
+  padding: 0;
+}
+
+.m-header-drawer-container .rs-drawer-header {
+  background-color: #333;
+}
+
+.m-header-drawer-container .rs-drawer-header-close {
+  /* border: solid 1px red; */
+  background-color: #ff8b38;
+  color: #ffffff;
+}
+
+.vertical_menu {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  position: fixed;
+  /* height: 100vh; */
+  height: 100%;
+  width: 100%;
+}
+
+.vertical_menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vertical_menu ul li {
+  padding: 10px;
+  border-bottom-style: solid;
+  border-bottom-color: #878787;
+  border-bottom-width: 2px;
+}
+
+.vertical_menu ul li:last-child {
+  border: none;
+}
+
+.vertical_menu ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.vertical_menu ul li a:hover {
+  background-color: #575757;
+}
+
+.menu-item-has-children {
+  position: relative;
+}
+
+.menu-item-has-children .sub-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  list-style: none;
+  padding-left: 15px;
+}
+
+.menu-item-has-children .sub-menu.open {
+  max-height: 500px;
+}
+
+.mobile-arrows {
+  /* border: solid 1px red; */
+  height: 40px;
+  position: absolute;
+  right: 5%;
+  /* right: 10px; */
+  top: 10px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main style */
+
+.header-container {
+  /* border: solid 1px red; */
+  /* height: 90px; */
+  justify-content: space-between;
+  padding: 15px 0;
+  background-color: rgba(107, 107, 107, 0.35);
+}
+
+.header-container .imageWrapper {
+  width: 120px;
+}
+
+.h-nav-container {
+  /* border: solid 1px blue; */
+  padding: 10px 18px;
+  border-radius: 20px;
+  background-color: rgba(107, 107, 107, 0.35);
+}
+
+.h-nav-container a {
+  display: block;
+  margin-right: 15px;
+  color: #ffffff !important;
+}
+
+.h-nav-container a:last-child {
+  margin-right: auto;
+}
+
+.company-logo-container {
+  margin-left: 45px;
+}
+
+.menu-icon-container {
+  margin-right: 45px;
+}

@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import EeHeader from './components/EeHeader';
+import HImageSlider from './components/home/HImageSlider';
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -12,9 +14,13 @@ export default function Home() {
   if (!mounted) return null; // Prevent rendering on the server
 
   return (
-    <div>
-      <h2>Home Page</h2>
-      <h4>Upadted</h4>
+    <div className="home-container relative ">
+      <div className="home-header-container">
+        <EeHeader />
+      </div>
+      <div>
+        <HImageSlider />
+      </div>
     </div>
   );
 }

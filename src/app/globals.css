@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* :root {
   --background: #ffffff;
@@ -24,3 +24,92 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 } */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.p-l-5 {
+  padding-left: 5px;
+}
+
+.p-r-5 {
+  padding-right: 5px;
+}
+
+.p-r-10 {
+  padding-right: 10px;
+}
+
+.p-r-15 {
+  padding-right: 15px;
+}
+
+.dis-none {
+  display: none;
+}
+
+.dis-none-imp {
+  display: none !important ;
+}
+
+.custom-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-optical-sizing: auto;
+  font-style: normal;
+  /* letter-spacing: 0.5px; */
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+button,
+a,
+li {
+  font-family:
+    'Raleway', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif !important ;
+  font-optical-sizing: auto;
+  /* font-style: normal; */
+}
+
+.imageWrapper {
+  width: 100%;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.main-color {
+  color: #ff8b38;
+}
+
+.main-color-imp {
+  color: #ff8b38 !important ;
+}
+
+.main-para-col {
+  color: #cacaca;
+}
+
+.home-header-container {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
