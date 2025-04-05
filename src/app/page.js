@@ -8,6 +8,10 @@ import HomeAboutSection from './components/home/HomeAboutSection';
 import './styles/home.css';
 import { motion } from 'motion/react';
 import HomeMember from './components/home/HomeMember';
+import HomePressCover from './components/home/HomePressCover';
+import SubscribeSection from './components/home/SubscribeSection';
+import ContactSection from './components/home/ContactSection';
+import Scroll3DGallery from './components/home/Scroll3DGallery';
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -27,7 +31,13 @@ export default function Home() {
         <HImageSlider />
       </div>
       <div className=" relative  pb-20 ">
-        <section className="home-aboutus-header">
+        <motion.section
+          initial={{ opacity: 0, y: -60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="home-aboutus-header"
+        >
           <h3 className="special-text main-color ">Who We Are</h3>
           <p>
             Our mission is to empower and unify India’s events and experiential
@@ -35,12 +45,16 @@ export default function Home() {
             growth across the nation’s vibrant ecosystem of event professionals
             and organizations.
           </p>
-        </section>
+        </motion.section>
         <HomeAboutSection />
         <section className="home-aboutus-link-container custom-flex ">
           <div className="imageWrapper">
             <img src="/images/we-care-img.jpg" alt="we-care-img"></img>
           </div>
+          {/* <div>
+            <p>FOR SUPPORT PLEASE MAIL:</p>
+            <a href="mailto:wecare@eemaindia.com">wecare@eemaindia.com</a>
+          </div> */}
           <p>
             FOR SUPPORT PLEASE MAIL:{' '}
             <a href="mailto:wecare@eemaindia.com">wecare@eemaindia.com</a>
@@ -71,6 +85,22 @@ export default function Home() {
       <div id="member">
         <HomeMember />
       </div>
+
+      <div>
+        <HomePressCover />
+      </div>
+
+      <div>
+        <SubscribeSection />
+      </div>
+
+      {/* <div>
+        <ContactSection />
+      </div> */}
+
+      {/* <div>
+        <Scroll3DGallery />
+      </div> */}
     </div>
   );
 }

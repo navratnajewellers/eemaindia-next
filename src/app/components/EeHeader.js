@@ -23,25 +23,15 @@ export default function EeHeader() {
           <img src="/images/company-logo.svg" alt="company-logo"></img>
         </section>
         <section className="custom-flex h-nav-container">
-          <a href="/aboutus">
-            <AnimatedText text="About Us" />
-          </a>
+          <a href="/aboutus">About Us</a>
 
-          <a href="/members">
-            <AnimatedText text="Members" />
-          </a>
+          <a href="/members">Members</a>
 
-          <a href="/eemagine">
-            <AnimatedText text="EEMagine 2024" />
-          </a>
+          <a href="/eemagine">EEMagine 2024</a>
 
-          <a href="/eemaxglobal">
-            <AnimatedText text="EEMax Global" />
-          </a>
+          <a href="/eemaxglobal">EEMax Global</a>
 
-          <a href="/carrer">
-            <AnimatedText text="Carrers" />
-          </a>
+          <a href="/carrer">Carrers</a>
         </section>
         <section className="menu-icon-container cursor-pointer ">
           <MenuIcon
@@ -66,7 +56,7 @@ export default function EeHeader() {
         >
           <Drawer.Header>
             <Drawer.Title className=" text-center main-color-imp ">
-              BEYOND RENEWABLES
+              EEMA INDIA
             </Drawer.Title>
           </Drawer.Header>
           <Drawer.Body>

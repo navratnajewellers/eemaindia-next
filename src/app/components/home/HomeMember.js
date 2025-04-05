@@ -100,19 +100,34 @@ const HomeMember = () => {
 
   return (
     <div className="home-member-container">
-      <motion.div
-        initial={{ opacity: 0, x: 60 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true }}
-        className=" custom-flex pt-16 pb-20  "
+      <div
+        className=" custom-flex pt-16 pb-20 "
+        style={{ flexDirection: 'column' }}
       >
-        <h3 className=" special-text ">National Executive Committee</h3>
-      </motion.div>
+        <motion.h3
+          initial={{ opacity: 0, x: 60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className=" special-text main-color "
+        >
+          National Executive Committee
+        </motion.h3>
+        <motion.h5
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: true }}
+          className=" text-center pl-10 pr-10 pt-6 pb-5 "
+        >
+          Meet the visionary leaders steering EEMA towards innovation, unity,
+          and excellence across India’s event and experiential landscape.
+        </motion.h5>
+      </div>
       <motion.div
         initial={{ opacity: 0, y: 70 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
         viewport={{ once: true }}
         className="home-m-slider-container custom-flex "
       >

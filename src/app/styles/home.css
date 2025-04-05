@@ -59,6 +59,13 @@
   margin-right: 25px;
 }
 
+.home-aboutus-link-container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
 .home-aboutus-link-container a {
   color: #6f6f6f;
   margin-left: 5px;
@@ -101,4 +108,72 @@
 
 .home-m-s-content-container h5 {
   margin-bottom: 5px;
+}
+
+/* press coverage */
+
+.home-press-container {
+  /* border: solid 1px red; */
+  padding: 75px 0;
+}
+
+.home-press-heading {
+  margin-bottom: 45px;
+}
+
+/* .home-press-content-container {
+  border: solid 1px blue;
+} */
+
+.home-press-content {
+  /* border: solid 1px red; */
+  padding: 25px 10px;
+}
+
+.home-press-card {
+  margin: auto;
+}
+
+.home-press-card {
+  color: #333;
+  min-height: 450px;
+}
+
+.home-press-image {
+  height: 280px;
+}
+
+/* subscribe section */
+.subscribe-container {
+  /* border: solid 1px red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 75px 0;
+  /* background-image: linear-gradient(
+    to right,
+    rgb(255, 70, 60),
+    rgb(255, 187, 0)
+  ); */
+  background-image: linear-gradient(
+    to right,
+    rgb(39, 39, 39),
+    rgb(100, 100, 100)
+  );
+}
+
+.subscribe-container h3 {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* responsive design mobile device */
+
+@media screen and (max-width: 768px) {
+  .home-aboutus-link-container p {
+    flex-direction: column;
+  }
 }
