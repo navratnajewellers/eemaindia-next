@@ -1,0 +1,143 @@
+.breadcumb-container {
+  /* border: solid 1px red; */
+  padding: 95px 0;
+  padding-left: 45px;
+  position: relative;
+  color: #ffffff;
+}
+
+.breadcumb-bg {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: -2;
+}
+
+.breadcumb-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -1;
+}
+
+.bc-content {
+  margin-top: 10px;
+}
+
+.bc-non-active,
+.bc-non-active a {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.bc-active {
+  color: #ff8b38;
+  font-size: 16px;
+}
+
+/* about nav menu section */
+
+.about-nav-menu-container {
+  /* border: solid 1px red; */
+  padding: 5px 0;
+}
+
+.about-nav-menu-container a {
+  font-size: 22px;
+  color: rgb(59, 59, 59);
+  position: relative;
+}
+
+.about-nav-menu-container a:hover {
+  color: #ff8b38;
+}
+
+.about-nav-menu-container a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff8b38;
+  transition: all 0.3s ease;
+}
+
+.about-nav-menu-container a:hover::before {
+  width: 100%;
+}
+
+.about-nav-menu-container a:first-child::before {
+  width: 0;
+}
+
+.about-nav-menu-container a:first-child {
+  color: #ff8b38;
+}
+
+.about-sec1-container {
+  /* border: solid 1px red; */
+  padding: 75px 7% 0;
+  text-align: center;
+}
+
+.about-sec1-container h2 {
+  margin-bottom: 35px;
+}
+
+.about-sec1-container p {
+  font-size: 16px;
+  /* letter-spacing: 0.2px; */
+  color: #525252;
+  margin-bottom: 20px;
+}
+
+.about-sec3-container {
+  /* border: solid 1px red; */
+  padding: 75px 7%;
+  text-align: center;
+}
+
+.about-sec3-container p {
+  font-size: 16px;
+  /* letter-spacing: 0.2px; */
+  color: #525252;
+  margin-bottom: 20px;
+}
+
+.about-sec4-container {
+  /* border: solid 1px blue; */
+  margin: auto;
+}
+
+.about-sec5-container {
+  /* border: solid 1px blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.about-sec5-container .imageWrapper {
+  width: 120px;
+}
+
+.about-sec5-container a {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.about-sec5-container a:first-child {
+  margin-right: 45px;
+}
+
+.about-sec5-container a:hover {
+  transform: scale(1.05);
+}

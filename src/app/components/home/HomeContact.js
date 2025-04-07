@@ -41,8 +41,8 @@ const HomeContact = () => {
               height="100%"
               frameBorder="0"
               style={{ border: 0 }}
-              // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.7365384940667!2d77.24790428885501!3d28.547637699999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce340ab79b197%3A0x3720d15cd5fb9b1f!2sHemkunt%20Tower!5e0!3m2!1sen!2sin!4v1721993932794!5m2!1sen!2sin"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.3619707349953!2d77.20283947408963!3d28.52883788878457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1fd1caede81%3A0xfb65c4866f92da37!2sWeWork!5e0!3m2!1sen!2sin!4v1742474630657!5m2!1sen!2sin"
+              // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.3619707349953!2d77.20283947408963!3d28.52883788878457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1fd1caede81%3A0xfb65c4866f92da37!2sWeWork!5e0!3m2!1sen!2sin!4v1742474630657!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14020.367201889907!2d77.22311512553614!3d28.53696030398879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce22b6981dfe7%3A0x12cc06a064f08a85!2sEEMA%20-%20Event%20and%20Entertainment%20Management%20Association!5e0!3m2!1sen!2sin!4v1744006066319!5m2!1sen!2sin"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

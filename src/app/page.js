@@ -12,6 +12,9 @@ import HomePressCover from './components/home/HomePressCover';
 import SubscribeSection from './components/home/SubscribeSection';
 import ContactSection from './components/home/ContactSection';
 import Scroll3DGallery from './components/home/Scroll3DGallery';
+import HomeContact from './components/home/HomeContact';
+import EeFooter from './components/EeFooter';
+import ScrollPage from './components/ScrollPage';
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -24,6 +27,9 @@ export default function Home() {
 
   return (
     <div className="home-container relative ">
+      <div>
+        <ScrollPage />
+      </div>
       <div className="home-header-container">
         <EeHeader />
       </div>
@@ -93,6 +99,14 @@ export default function Home() {
       <div>
         <SubscribeSection />
       </div>
+
+      <div>
+        <HomeContact />
+      </div>
+
+      <footer>
+        <EeFooter />
+      </footer>
 
       {/* <div>
         <ContactSection />

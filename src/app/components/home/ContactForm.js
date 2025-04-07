@@ -70,7 +70,7 @@ export default function ContactForm() {
 
   return (
     <Container
-      className={` contact-form-container p-6 transition-all ${darkMode ? 'bg-black text-white' : 'bg-white text-gray-900'}`}
+      className={` contact-form-container p-6 transition-all rounded-2xl  ${darkMode ? 'bg-black text-white' : 'bg-white text-gray-900'}`}
     >
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold">Contact Us</h2>
@@ -157,6 +157,10 @@ export default function ContactForm() {
           </Button>
         </Form.Group>
       </Form>
+      <div className="home-contact-membership-container">
+        <span>For membership please email us at</span>
+        <a href="mailto:info@eemaindia.com">info@eemaindia.com</a>
+      </div>
     </Container>
   );
 }

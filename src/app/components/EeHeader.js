@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
 'use client';
 
@@ -6,7 +7,6 @@ import MenuIcon from '@rsuite/icons/Menu';
 import { Drawer } from 'rsuite';
 import { useState } from 'react';
 import '../styles/header.css';
-import AnimatedText from './AnimatedText';
 
 export default function EeHeader() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,9 +19,9 @@ export default function EeHeader() {
   const DesktopHeader = () => {
     return (
       <header className="header-container custom-flex ">
-        <section className="imageWrapper company-logo-container ">
+        <a href="/" className="imageWrapper company-logo-container ">
           <img src="/images/company-logo.svg" alt="company-logo"></img>
-        </section>
+        </a>
         <section className="custom-flex h-nav-container">
           <a href="/aboutus">About Us</a>
 
